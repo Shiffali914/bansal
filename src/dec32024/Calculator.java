@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        char choice=sc.next().charAt(0);
-        do{
-        System.out.println("***********");
+       char choice;
+
+       System.out.println("***********");
         System.out.println("Welcome to my calculator");
         System.out.println("***********");
         System.out.println("enter your choice");
@@ -67,10 +67,11 @@ public class Calculator {
                     default:
                     System.out.println("wrong input");
             }
-            System.out.println("do you want to go to the main menu");
+            /*System.out.println("do you want to go to the main menu");
             System.out.println("enter your choice");
+            choice=sc.next().charAt(0);
 
-        }while(choice=='Y'||choice=='y');
+        }while(choice=='Y'||choice=='y');*/
     }
 }
 
