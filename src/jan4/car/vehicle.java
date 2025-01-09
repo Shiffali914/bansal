@@ -22,7 +22,9 @@ public class vehicle {
         System.out.println("Number of wheels..."+numberofWheels);
         System.out.println("Number of doors"+numberofdoors);
 
-
+    }
+    public void printdetailsmore(int kicks){
+        System.out.println("No. of kicks"+kicks);
     }
 }
 

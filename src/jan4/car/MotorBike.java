@@ -2,7 +2,7 @@ package jan4.car;
 
 public class MotorBike extends vehicle{
 
-        int numberOfKicks;
+        //int Kicks;
     @Override
     public void start() {
         System.out.println("Bike starts ");

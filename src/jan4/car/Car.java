@@ -13,7 +13,6 @@ public class Car extends vehicle {
         System.out.println("Car brakes...");
     }
 
-
     public boolean hasAC() {
         return true;
     }

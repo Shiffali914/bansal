@@ -11,5 +11,6 @@ public class VehicleMain {
       //vec.printDetails(4,4);
       car.printDetails(4,4);
       plane.printDetails(3,5);
+      bike.printdetailsmore(4);
     }
 }

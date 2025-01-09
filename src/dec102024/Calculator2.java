@@ -15,7 +15,6 @@ public class Calculator2 {
 
             int input = sc.nextInt();
             switch (input) {
-
                 case 1:
                     obj.sum();
                     break;

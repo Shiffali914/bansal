@@ -28,7 +28,7 @@ public class Book {
         this.price = price;
 
     }
-    public void DisplayDetails(String title,String author,double price) {
+    public void DisplayDetails() {
         //System.out.println("Title"+" " +title+" "+"Author"+author+" "+"Price"+price);
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
