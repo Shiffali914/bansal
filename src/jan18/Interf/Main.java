@@ -2,6 +2,7 @@ package jan18.Interf;
 
 public class Main {
     public static void main(String[] args) {
+
         Computer computer=new Computer();
         Iphone10 iphone10=new Iphone10();
         Iphone16 iphone16=new Iphone16();

@@ -7,6 +7,7 @@ public class Fabonacci {
         //0,1,1,2,3,5,8
         arr[0]=0;
         arr[1]=1;
+
         for(int i=2; i<arr.length;i++){
             arr[i]=arr[i-1]+arr[i-2];
         }

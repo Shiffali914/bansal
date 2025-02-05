@@ -19,15 +19,18 @@ public class Main {
 
        person[3]=new Student("Aman",35,102,"Phyton",6.7);
        for(int i=0; i< person.length; i++) {
+
            if (person[i].getType().equals(Student.class)) {
                System.out.println();
                person[i].displayinfo();
                University.incrementStudentCount();
-           } else if (person[i].getType().equals(Professor.class)) {
+           }
+           else if (person[i].getType().equals(Professor.class)) {
                System.out.println();
                person[i].displayinfo();
                University.incrementProfessorCount();
-           } else {
+           }
+           else {
                System.out.println();
                person[i].displayinfo();
                University.incrementdepartmenthead();

@@ -1,6 +1,7 @@
 package jan18.Interf;
 
 public class Iphone10 implements Clock,MusicPlayer,Calculator,Camera,Telephone{
+
     @Override
     public void calculate() {
         System.out.println("Iphone10 make calculate");
