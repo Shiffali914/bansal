@@ -86,16 +86,17 @@ public class BookStore
     }
 
     public static void purchasedBook(){
-
-    System.out.println("");
-    for (Book books : list2) {
-        System.out.println("Purchased Book is \n"+books.getBookId()+" "+books.getTitle()+" "+books.getAuthor()+" "+books.getPrice()+" "+books.getPurchasequantity());
-    }
+        System.out.println("");
+        System.out.println("purchased books are:");
+        for (Book books : list2) {
+        System.out.println("BookId"+books.getBookId()+" "+"BookTitle"+" "+books.getTitle()+"Book Author"+" "+books.getAuthor()+"Book Price"+" "+books.getPrice()+"Quantity"+" "+books.getPurchasequantity());
+        }
     }
     public static void main(String[] args) {
 
         String bookId;
         int quantity;
+
 
         Book book1=new Book("B101","Clean Code","Robert C Martin",40.0,5);
         Book book2=new Book("B102","Java Programming","James Gosling",50.0,10);
@@ -132,14 +133,18 @@ public class BookStore
             System.out.println(e.getMessage());
 
         }
-
+            char ch = 0;
         // purchase a book from the store
         try {
-            System.out.println("enter the bookid");
-            String bookId1 = scanner.next();
-            System.out.println("enter the quantity");
-            quantity = scanner.nextInt();
-            purchaseBook(bookId1, quantity);
+            do {
+                System.out.println("enter the bookid");
+                String bookId1 = scanner.next();
+                System.out.println("enter the quantity");
+                quantity = scanner.nextInt();
+                purchaseBook(bookId1, quantity);
+                System.out.println("Do you want to purchase Y/n");
+                ch=scanner.next().charAt(0);
+            }while(ch =='Y' || ch=='y');
         }
         catch (BookNotfoundException | InsufficientStock e) {
             System.out.println(e.getMessage());
