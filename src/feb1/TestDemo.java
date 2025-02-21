@@ -19,8 +19,8 @@ public class TestDemo {
         set.add(50);
         set.add(60);
 
-        System.out.println(set.ceiling(60));
-        System.out.println(set.floor(10));*/
+        System.out.println(set.ceiling(60));            // ya toh equal value ya esse vadda value return de dega
+        System.out.println(set.floor(10));*/            //
 
 
 

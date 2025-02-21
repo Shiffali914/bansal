@@ -23,7 +23,8 @@ with the use of abstract keyword
 .an abstract can have abstract or non-abstract methods
 .abstract method does not have body or implementation body
 .if a class has an abstract method, class must be abstract
-.You cannot create an object of abstract class cannot instantiate the abstract class
+.You cannot create an object of abstract class cannot instantiate 
+the abstract class.
 
 
 
@@ -47,7 +48,7 @@ interface Test {            //similiar to class
 public, static and  final   // all the variable, fields are by default
 
 
-public and abstract        // all the methods are by default no non abstract is used in interfaces
+public and abstract        // all the methods are by default and nonabstract is used in interfaces
 
 You cannot create an object or instantiate the interface.
 

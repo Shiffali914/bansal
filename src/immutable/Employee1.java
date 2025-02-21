@@ -1,18 +1,18 @@
 package immutable;
 
-final public class Employee {
+final public class Employee1 {
      private final int id;
      private  final String name;
-     private final  Address address;                //address is reference means address is another class of object which is mutable class
+     private final Address1 address;                //address is reference means address is another class of object which is mutable class
 
     //parameterized constructor
 
-    public Employee(int id, String name, Address address) {
+    public Employee1(int id, String name, Address1 address) {
         this.id = id;
         this.name = name;
         //this.address=address;
 
-       Address adr1=new Address(address.getCity());
+       Address1 adr1=new Address1(address.getCity());
 
         /*The address field is mutable,but we make a deep
         copy of it in the constructor. It means that if the address object is modified outside
@@ -25,14 +25,17 @@ final public class Employee {
     //only getter method is used no setter method is used.
 
     public int getId() {
+
         return id;
     }
 
     public String getName() {
+
         return name;
     }
 
-    public Address getAddress() {
+    public Address1 getAddress() {
+
         return address;
     }
 

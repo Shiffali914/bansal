@@ -1,7 +1,6 @@
-package feb1;
+package feb1.Hashmap;
 
 import java.util.*;
-import java.util.Map.Entry;
 
 public class Provinces {
     public static void main(String[] args) {
@@ -37,6 +36,7 @@ public class Provinces {
         System.out.println(" ");
 
         Collection<String>listkey=map1.keySet();
+
         List<String>list=new ArrayList<>(listkey);
         Collections.sort(list);
         System.out.println("Sorted list of provinces");
