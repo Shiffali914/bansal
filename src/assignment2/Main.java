@@ -18,21 +18,22 @@ public class Main {
        person[2]=new DepartmentHead("Dr.Sangetha Chanderkanta",50,"P98765","Computer Science",12000.00,"A-105");
 
        person[3]=new Student("Aman",35,102,"Phyton",6.7);
-       for(int i=0; i< person.length; i++) {
+       
+       for(Person people:person) {
 
-           if (person[i].getType().equals(Student.class)) {
+           if (people instanceof Student) {
                System.out.println();
-               person[i].displayinfo();
+               people.displayinfo();
                University.incrementStudentCount();
            }
-           else if (person[i].getType().equals(Professor.class)) {
+           else if (people instanceof Professor) {
                System.out.println();
-               person[i].displayinfo();
+               people.displayinfo();
                University.incrementProfessorCount();
            }
            else {
                System.out.println();
-               person[i].displayinfo();
+               people.displayinfo();
                University.incrementdepartmenthead();
 
            }

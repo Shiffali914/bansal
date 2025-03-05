@@ -26,8 +26,8 @@ public class Person {
         System.out.println("Age "+getAge());
     }
 
-    public final Class getType(){
-        return getClass();
+    public final String getType(){
+        return "Person";
 }
 
 }

@@ -79,7 +79,7 @@ public class BookStore
     {
         double total=0.0;
         for(int i=0;i<list1.size();i++){
-            total+=list1.get(i).getPrice()*list1.get(i).getQuantity();
+            total=total+list1.get(i).getPrice()*list1.get(i).getQuantity();
 
         }
         System.out.println("Total inventory"+total);
@@ -137,7 +137,7 @@ public class BookStore
         // purchase a book from the store
         try {
             do {
-                System.out.println("enter the bookid");
+                System.out.println("enter the bookid which do you want to purchase");
                 String bookId1 = scanner.next();
                 System.out.println("enter the quantity");
                 quantity = scanner.nextInt();
@@ -158,6 +158,7 @@ public class BookStore
         //Display purchase a book
         purchasedBook();
 
+        //findout unique author name
         Set<String>set1 =new HashSet<>();
        for(Book books:list1){
            set1.add(books.getAuthor());
@@ -167,6 +168,7 @@ public class BookStore
         System.out.println("Unique Author name"+set1);
         System.out.println();
 
+        //find out the book detail by title
        Set<String>set2= new TreeSet<String>();
        for(int i=0;i<list1.size();i++){
            set2.add(list1.get(i).getTitle()+" "+list1.get(i).getAuthor()+" "+list1.get(i).getBookId());
